@@ -1,0 +1,6 @@
+{
+  "name": "Apex Market AI",
+  "description": "Windows 11 Native Desktop Trading & AI Market Analysis Application featuring real-time charts, AI trade signals, and installer packaging tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
