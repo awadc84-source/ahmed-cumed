@@ -90,6 +90,10 @@ function generateCandles(symbol: string, timeframe: string = "15m", count: numbe
 
 // --- API ROUTES ---
 
+app.get("/healthz", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
 app.get("/api/health", (req, res) => {
   res.json({
     status: "ok",
