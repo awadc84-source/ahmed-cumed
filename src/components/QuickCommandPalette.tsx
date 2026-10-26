@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Search, X, TrendingUp, Zap, Download, Settings, LineChart } from "lucide-react";
+import { Search, X, TrendingUp, Zap, Download, Settings, LineChart, ListChecks, PieChart } from "lucide-react";
 import { ViewTab } from "../types";
 
 interface QuickCommandPaletteProps {
@@ -39,6 +39,8 @@ export const QuickCommandPalette: React.FC<QuickCommandPaletteProps> = ({
     { label: "Trade XAU/USD (Gold)", symbol: "XAU/USD", icon: TrendingUp },
     { label: "Trade BTC/USD (Bitcoin)", symbol: "BTC/USD", icon: TrendingUp },
     { label: "View Live AI Signals", tab: "signals", icon: Zap },
+    { label: "Open Task List", tab: "task-list", icon: ListChecks },
+    { label: "Open Analytics Dashboard", tab: "analytics", icon: PieChart },
     { label: "Windows 11 Installer & Packages Hub", tab: "installer_hub", icon: Download },
     { label: "Windows App Preferences", tab: "settings", icon: Settings },
   ];

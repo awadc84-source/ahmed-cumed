@@ -11,6 +11,8 @@ import {
   CalendarDays, 
   Bell, 
   FileText, 
+  ListChecks,
+  PieChart,
   Settings, 
   Sparkles,
   Download,
@@ -46,6 +48,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: "calendar", label: "Calendar", icon: CalendarDays },
     { id: "alerts", label: "Alerts", icon: Bell },
     { id: "reports", label: "Reports", icon: FileText },
+    { id: "task-list", label: "Task List", icon: ListChecks },
+    { id: "analytics", label: "Analytics", icon: PieChart },
     { id: "settings", label: "Settings", icon: Settings },
     { id: "installer_hub", label: "Installer Hub", icon: Download, badge: "Win11" },
   ];
