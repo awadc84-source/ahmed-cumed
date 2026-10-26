@@ -314,4 +314,9 @@ async function startServer() {
   });
 }
 
-startServer();
+// Only start the server when run directly (not under tests, which import the app).
+if (!process.env.VITEST) {
+  startServer();
+}
+
+export { app };
