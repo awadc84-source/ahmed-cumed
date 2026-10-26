@@ -133,4 +133,6 @@ export type ViewTab =
   | "alerts"
   | "reports"
   | "settings"
+  | "task-list"
+  | "analytics"
   | "installer_hub";

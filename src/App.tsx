@@ -14,6 +14,8 @@ import { CalendarView } from "./views/CalendarView";
 import { AlertsView } from "./views/AlertsView";
 import { ReportsView } from "./views/ReportsView";
 import { SettingsView } from "./views/SettingsView";
+import { TaskListView } from "./views/TaskListView";
+import { AnalyticsView } from "./views/AnalyticsView";
 import { WindowsInstallerHub } from "./components/WindowsInstallerHub";
 import { AIAssistantDrawer } from "./components/AIAssistantDrawer";
 import { QuickCommandPalette } from "./components/QuickCommandPalette";
@@ -334,6 +336,23 @@ export default function App() {
           {activeTab === "alerts" && <AlertsView />}
 
           {activeTab === "reports" && <ReportsView />}
+
+          {activeTab === "task-list" && (
+            <TaskListView
+              signals={signals}
+              positions={positions}
+              favorites={favorites}
+            />
+          )}
+
+          {activeTab === "analytics" && (
+            <AnalyticsView
+              signals={signals}
+              positions={positions}
+              symbols={symbols}
+              user={user}
+            />
+          )}
 
           {activeTab === "settings" && (
             <SettingsView settings={settings} setSettings={setSettings} />
